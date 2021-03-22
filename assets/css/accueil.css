@@ -1,0 +1,1475 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+  --color1: #bc93d5;
+  --color2: #54CCC5;
+  --color3: #f8C06F;
+  --color4: #9ed351;
+  --color5: #009aa3;
+  --color6: #004f73;
+  --color7: #6f6f6e;
+  --color8: #f5f5f5;
+  --color9: #d6d5d5;
+
+}
+html{
+  color: transparent;
+}
+body{
+  
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+header{
+grid-area: header;
+}
+/*navbar*/
+.navBar{
+ 
+background-color:white;
+  height: 20vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  " logo logo   galerie galerie galerie galerie galerie galerie  galerie liBlog liContact liCampus "
+  "logo logo    liDesign liDesign  liDev liChef liChef liGraph liGraph liBlog liContact  liCampus"; 
+ 
+}
+
+.galerie{
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: galerie;
+  padding-top: 20px;
+  font-weight: 39px;
+  font-size: 1.8em;
+}
+
+.logo_nav{
+  margin: auto 0 auto 10%;
+  grid-area: logo;
+  width: 30vh;
+}
+
+.liDesign{
+   margin-left: 60%;
+    grid-area: liDesign;
+    text-align: center;
+}
+.liDev{
+  margin-left: 55%;
+  grid-area: liDev;
+  text-align: center;
+  
+}
+.liChef{
+  margin-left: 27%;
+  grid-area: liChef;
+  text-align: center;
+}
+.liGraph{
+margin-right: 40%;
+  grid-area: liGraph;
+  text-align: center;
+  
+}
+.liBlog{
+  margin-left: 20%;
+  grid-area: liBlog;
+  padding-top: 20%;
+}
+.liContact{
+
+  grid-area: liContact;
+  padding-top: 20%;
+}
+
+#lien_nav{
+  text-decoration: none;
+  font-size: 1em;
+  color:var(--color7);
+  font-weight: bolder;
+}
+#lien_galerie{
+  text-decoration: none;
+  font-size: 1em;
+  color:var(--color6);
+  font-weight: bolder;
+}
+#lien_campus{
+  text-decoration: none;
+  font-size: 1em;
+  color:var(--color6);
+  font-weight: bolder;
+}
+.liCampus{
+  
+  grid-area: liCampus;
+  padding-top: 20%;;
+  margin-right: 30%;
+  text-align: center;
+}
+/*paralax*/
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+
+.bg1::after {
+  background-size: cover;
+  background-repeat: no-repeat;
+ background-image: url(../img/Bordeaux.jpg);
+ 
+}
+.gradient{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(46, 72, 82, 0.46) 0%,
+    rgba(46, 72, 82, 0.72) 100%
+  );
+}
+/*FIN     paralax*/
+
+
+
+/*PARTIE 4 formations*/
+
+
+.designText{
+  
+  color:var(--color7);
+  grid-area:designText;
+  align-items: center;
+  padding-left:  5%;
+  padding-right: 30%;
+background-color: white;
+
+  }
+
+.devText{
+  color:var(--color7);
+  grid-area:devText;
+  align-items: center;
+  padding-left:  20%;
+  padding-right: 10%;
+  padding-bottom: 00%;
+  
+}
+.chefText{
+  
+  color:var(--color7);
+  grid-area:chefText;
+  align-items: center;
+  padding-left:  2%;
+  padding-right: 40%;
+ 
+
+}
+
+.graphText{
+ 
+  color:var(--color7);
+  grid-area:graphText;
+  align-items: center;
+  padding-left:  20%;
+  padding-right: 2%;
+ 
+}
+
+.designPict{
+  border-radius: 10px;
+  height: 45vh;
+ 
+}
+#titreCampus{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5em;
+  text-align: center;
+  font-weight:bold;
+  margin-top: 30%;
+
+}
+
+#lien_Pict_design{
+  
+  margin-left: 20%;
+  height: 45vh;
+  width: 67.4vh;
+  position: relative;
+  background-color:var(--color1);
+  border-radius: 10px;
+  grid-area:designPict;
+}
+
+#lien_Pict_design:hover .designPict{
+
+  opacity: 0.6;
+}
+.devPict{
+  height: 45vh;
+  border-radius: 10px;
+}
+.chefPict{
+  border-radius: 10px;
+  height: 45vh;
+
+}
+#lien_Pict_chef{
+
+  margin-left: 20%;
+  height: 45vh;
+  width: 67.4vh;
+  position: relative;
+  background-color:var(--color3);
+  border-radius: 10px;
+  grid-area:chefPict;
+}
+
+#lien_Pict_chef:hover .chefPict{
+  opacity: 0.6;
+}
+#lien_Pict_dev{
+  
+  margin-right: 20%;
+  height: 45vh;
+  width: 67.4vh;
+  position: relative;
+  background-color:var(--color2);
+  border-radius: 10px;
+  grid-area:devPict;
+}
+
+#lien_Pict_dev:hover .devPict{
+
+  opacity: 0.6;
+}
+
+.graphPict{
+  border-radius: 10px;
+  height: 45vh;
+}
+
+
+  #lien_Pict_graph{
+    margin-right: 20%;
+    height: 45vh;
+    width: 67.4vh;
+    position: relative;
+    background-color:var(--color4);
+    border-radius: 10px;
+    grid-area:graphPict;
+  }
+  
+  #lien_Pict_graph:hover .graphPict{
+
+    opacity: 0.6;
+  }
+
+#h1{
+
+  color: var(--color6);
+  font-size: 2.8em;
+}
+#h1_hide{
+  color: var(--color6);
+  font-size: 0.1em;
+  visibility: hidden;
+}
+.rose{
+  font-size: 2em;
+  color: var(--color1);
+  text-align: center;
+}
+
+.turquoise{
+  font-size: 2em;
+  color: var(--color2);
+  text-align: center;
+}
+.jaune{
+  font-size: 2em;
+  color: var(--color3);
+  text-align: center;
+}
+.vert{
+  font-size: 2em;
+  color: var(--color4);
+  text-align: center;
+}
+.quatre{
+  grid-area: quatre;
+    padding-top: 5%;
+    display: inline;
+   margin-left: 10%;
+
+}
+.inside_pict{
+  color:white ;
+  text-align: center;
+  vertical-align: center;
+}
+/* A ne pas manquer ! */
+.manque{
+
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 4em;
+  grid-area: manque;
+  text-align: center;
+
+}
+.texte_trait{
+ color: black;
+margin-top: 5vh;
+margin-bottom:5vh ; 
+text-decoration: underline var(--color2);
+text-underline-position: under;
+
+
+}
+.svg_manque{
+  height: 5vh;
+  width: 5vh;
+ margin-right: 50%;
+}
+
+  /**************** FOOTER ***********************/
+  footer{
+    height: auto;
+    background: var(--color6);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: white;
+    padding: 60px 20px;
+    position: relative;
+  }
+  
+  footer > div:nth-child(1){
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .logo_footer img{
+    width: 200px;
+    object-fit: cover;
+    padding-bottom: 10px;
+  }
+  
+  .logo_footer a{
+    padding-bottom: 20px;
+  
+  }
+  
+  .legal a{
+    margin-top: 5%;
+  }
+  
+  #infos{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-left: 1px solid var(--color2);
+  }
+  
+  .contact{
+    max-height: 152px;
+    min-width: 186px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .contact h4{
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+  }
+  
+  #contacts > div:nth-child(1){
+    padding-bottom: 66px;
+  }
+  
+  svg:not(footer svg){
+    height: 15px;
+    width: 15px;
+    color: black;
+  }
+  
+  footer a{
+    height: 15px;
+    color: var(--color8);
+    text-decoration: none;
+  }
+  
+  footer a:hover{
+    color: var(--water-blue);
+  }
+  
+  #contact_bordeaux,
+  #contact_libourne{
+    width: 29%;
+  }
+  
+  #contacts h4{
+    padding-bottom: 0;
+  }
+  .texte_adresse{
+    font-size: 1em;
+  }
+  .texte_tel{
+    font-size: 1em;
+  }
+  /**********  ICON SOCIAL    FOOTER *************/
+  
+  #icons_social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .icons_social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: var(--color7);
+  }
+  
+  #icons_social svg{
+    height: 15px;
+  }
+  
+  /*********** SCROLL-UP **************/
+  
+  #scroll-up{
+    right: 2%;
+    bottom: 10%;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background: var(--water-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+  
+  #scroll-up a{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: -90deg;
+    transform: translate(1px, -1px);
+    font-size: 1.5rem;
+  }
+  
+  #scroll-up a:hover{
+    color: unset;
+  }
+  
+  #scroll-up:hover{
+    opacity: 0.8;
+  
+  }
+  /*test*/
+/*cards*/
+#link-blog{
+  padding-top: 1vh;
+  background-color: var(--color8);
+}
+#link-blog .card {
+ 
+  border-radius: 20px;
+}
+
+#link-blog a {
+  text-decoration: none;
+  color: unset;
+}
+.liDesign,.liDev,.liChef,.liGraph,.liBlog{
+  margin: 0;
+}
+.card {
+  box-shadow: 0px 10px 18px -7px rgba(0, 0, 0, 0.8);
+ 
+}
+
+
+.img_container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card img {
+  transition: 0.5s;
+  
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card_espace{
+  padding-left:  10%; 
+  padding-right:  10%;
+  
+}
+#h2_card{
+  font-size: 2em;
+  color: var(--color6);
+  color: black;
+  margin-top: 2vh;
+  margin-bottom:5vh ; 
+  text-decoration: underline var(--color2);
+ margin-left: 10%;
+
+}
+.svg_quoi{
+  margin-top:2%;
+margin-left: 15%;
+  height: 5vh;
+  width: 5vh;
+
+}
+.actualites{
+  color:var(--color5);
+  margin-left: 19%;
+  height: 5vh;
+  width: 5vh;
+  
+}.img_card{  margin: 7% 0;
+  object-fit: cover;
+  object-position: 100% 80%; /* pour x et y */
+  width: 100%;
+  height: 50vh;
+  
+}
+
+
+
+/*Grid  */
+.container1{
+  background-color: white;
+  gap:15vh 0;
+  width: 100%; 
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "quatre quatre quatre quatre"
+    "designPict designPict designText designText"
+    "devText devText devPict devPict"
+    "chefPict chefPict chefText chefText"
+    "graphText graphText graphPict graphPict"
+    "manque manque manque manque"
+   ;
+   
+}
+/*Grid responsive */
+@media screen and (max-width:1400px){
+  .container1{
+   
+    display: grid;
+     color: white;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-areas: 
+     "quatre quatre quatre quatre"
+    "designPict designPict designText designText"
+    "devText devText devPict devPict"
+    "chefPict chefPict chefText chefText"
+    "graphText graphText graphPict graphPict"
+    "manque manque manque manque";
+    
+}
+.liDesign{
+  margin-left:80%;
+}
+.logo_nav{
+margin-left:2%;
+}
+
+
+@media screen and (max-width:1230px){
+  .container1{
+    
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+       grid-template-areas: 
+       "quatre quatre quatre quatre"
+       "designPict designPict designText designText"
+       "devText devText devPict devPict"
+       "chefPict chefPict chefText chefText"
+       "graphText graphText graphPict graphPict"
+       "manque manque manque manque"
+       ;
+}
+
+
+
+.designPict{
+
+  border-radius: 10px;
+  height: 35vh;
+ 
+}
+
+
+#lien_Pict_design{
+  
+ height: 35vh;
+  width: 52.5vh;
+  position: relative;
+  background-color:var(--color1);
+  border-radius: 10px;
+  grid-area:designPict;
+}
+
+#lien_Pict_design:hover .designPict{
+
+  opacity: 0.6;
+}
+.devPict{
+  height: 35vh;
+  border-radius: 10px;
+}
+#lien_Pict_dev{
+  
+  
+  height: 35vh;
+  width: 52.5vh;
+  position: relative;
+  background-color:var(--color2);
+  border-radius: 10px;
+  grid-area:devPict;
+}
+
+#lien_Pict_dev:hover .devPict{
+
+  opacity: 0.6;
+}
+.chefPict{
+  border-radius: 10px;
+  height: 35vh;
+
+}
+#lien_Pict_chef{
+
+  
+  height: 35vh;
+  width: 52.5vh;
+  position: relative;
+  background-color:var(--color3);
+  border-radius: 10px;
+  grid-area:chefPict;
+}
+
+#lien_Pict_chef:hover .chefPict{
+  opacity: 0.6;
+}
+.graphPict{
+  border-radius: 10px;
+  height: 35vh;
+}
+
+
+  #lien_Pict_graph{
+    
+    height: 35vh;
+    width: 52.5vh;
+    position: relative;
+    background-color:var(--color4);
+    border-radius: 10px;
+    grid-area:graphPict;
+  }
+  
+  #lien_Pict_graph:hover .graphPict{
+
+    opacity: 0.6;
+  }
+
+}
+
+ 
+
+
+@media screen and (max-width:1000px){
+
+  .container1{   
+   
+   gap: 0 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "quatre"
+      "designPict"  
+      "designText"
+      "devPict"
+      "devText"
+      "chefPict " 
+      "chefText"
+      "graphPict"
+      "graphText "
+      "manque"
+      ;
+}
+#h1{
+  display: none;
+ 
+}
+#h1_hide{
+  visibility: visible;
+ font-size: 2em;
+ text-align: center;
+}
+.designText{
+  padding:10% 10% 10% 10%;
+ 
+  color:var(--color7);
+  grid-area:designText;
+ text-align: center;
+
+
+  }
+
+.devText{
+  padding:10% 10% 10% 10%;
+  color:var(--color7);
+  grid-area:devText;
+  align-items: center;
+
+  
+}
+.chefText{
+  padding:10% 10% 10% 10%;;
+  color:var(--color7);
+  grid-area:chefText;
+  align-items: center;
+
+
+}
+
+.graphText{
+  padding:10% 10% 10% 10%;
+  color:var(--color7);
+  grid-area:graphText;
+  align-items: center;
+  text-align: center;
+ 
+ 
+}
+
+.designPict{
+  border-radius: 10px;
+  height: 45vh;
+}
+
+
+#lien_Pict_design{
+  margin: auto;
+  height: 45vh;
+  width: 67vh;
+  position: relative;
+  background-color:var(--color1);
+  border-radius: 10px;
+  grid-area:designPict;
+}
+
+#lien_Pict_design:hover .designPict{
+
+  opacity: 0.6;
+}
+.devPict{
+ 
+  border-radius: 10px;
+  height: 45vh;
+  
+}
+#lien_Pict_dev{
+  
+  margin: auto;
+  height: 45vh;
+  width: 67vh;
+  position: relative;
+  background-color:var(--color2);
+  border-radius: 10px;
+  grid-area:devPict;
+}
+
+#lien_Pict_dev:hover .devPict{
+
+  opacity: 0.6;
+}
+.chefPict{
+  border-radius: 10px;
+  height: 45vh;
+}
+#lien_Pict_chef{
+  margin: auto;
+  
+  height: 45vh;
+  width: 67vh;
+  position: relative;
+  background-color:var(--color3);
+  border-radius: 10px;
+  grid-area:chefPict;
+}
+
+#lien_Pict_chef:hover .chefPict{
+
+  opacity: 0.6;
+}
+.graphPict{
+  border-radius: 10px;
+  height: 45vh;
+}
+
+ 
+  #lien_Pict_graph{
+    margin: auto;
+    height: 45vh;
+    width: 67vh;
+    position: relative;
+    background-color:var(--color4);
+    border-radius: 10px;
+    grid-area:graphPict;
+  }
+  
+  #lien_Pict_graph:hover .graphPict{
+  
+    opacity: 0.6;
+  }
+
+  .navBar{
+    margin-top: 3%;
+    gap: 2%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    " logo logo galerie  liBlog liContact liCampus ";
+  }
+
+  .liblog{
+    background-color: var(--color6);
+  }
+.liDesign{
+  display: none;
+
+  }
+  .liDev{
+    display: none;
+  }
+  .liChef{
+    display: none;
+  }
+  .liGraph{
+    display: none;
+  }
+  
+.bg1{
+ 
+  display: none;
+}
+/**************** FOOTER ***********************/
+footer{
+  height: auto;
+  background: var(--color6);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: white;
+  padding: 60px 20px;
+  position: relative;
+  flex-direction: column;
+}
+
+footer > div:nth-child(1){
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_footer img{
+ 
+  width: 200px;
+  object-fit: cover;
+  padding-bottom: 10px;
+}
+
+.logo_footer a{
+  padding-bottom: 20px;
+
+}
+
+.legal a{
+ 
+  margin-top: 5%;
+}
+
+#infos{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-left: none;
+}
+
+.contact{
+  text-align: center;
+  height: 20%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact{
+  font-size: 0.4em;
+}
+
+.contact h4{
+  font-size: 1.1rem;
+ 
+}
+.texte_adresse{
+  font-size: 1.7em;
+}
+.texte_tel{
+  font-size: 3em;
+}
+
+svg:not(footer svg){
+  height: 15px;
+  width: 15px;
+  color: black;
+}
+
+footer a{
+  height: 15px;
+  color: var(--color8);
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: var(--water-blue);
+}
+
+
+#contacts h4{
+  padding-bottom: 0;
+}
+}
+
+  @media screen and (max-width:575px){
+
+    .container1{   
+      
+       
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "quatre"
+        "designPict"  
+        "designText"
+        "devPict"
+        "devText"
+        "chefPict " 
+        "chefText"
+        "graphPict"
+        "graphText "
+        "manque"
+        ;
+  }
+  .bg1{
+    
+    display: none;
+  }
+  .navBar{
+   
+    gap: 3%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.7fr 0.7fr 0.7fr ;
+    grid-template-areas: 
+    " logo  galerie  liBlog liContact liCampus ";
+  }
+ 
+  .logo_nav{
+  
+    margin-right: 10%;
+    grid-area: logo;
+    height: 11vh;
+    width: 13vh;
+  }
+  }
+  @media screen and (max-width:376px){
+.designPict,.devPict,.chefPict,.graphPict{
+  max-width: 375px;
+}
+.lien_pict_design,.lien_pict_dev,.lien_chef_pict,.lien_graph_pict{
+  max-width: 375px;
+}
+.logo_nav{
+margin: 0px;
+}
+
+
+#lien_nav{
+  margin: 0;
+  padding: 0;
+}
+.quatre{
+  margin-left: 0;
+  padding: 0;
+  max-width: 375px;
+}
+  
+ 
+  .graphText,.designText,.chefText,.devText{
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    max-width: 375px;
+  }
+  .rose,.turquoise,.jaune,.vert{
+    max-width: 375px;
+  }
+  p{
+    max-width: 375px;
+  }
+.manque{
+  padding: 0;
+  max-width: 375px;
+}
+
+footer{
+  padding: 0;
+  max-width: 375px;
+}
+.svg_manque{
+  margin: 0;
+}
+#contact_bordeaux,
+#contact_libourne{
+min-width: 69%;
+max-width: 375px;
+}
+  }
+/*cards*/
+#link-blog{
+  padding-top: 1vh;
+  background-color: var(--color8);
+}
+#link-blog .card {
+ 
+  border-radius: 20px;
+}
+
+#link-blog a {
+  text-decoration: none;
+  color: unset;
+}
+.liDesign,.liDev,.liChef,.liGraph,.liBlog{
+  margin: 0;
+}
+.card {
+  box-shadow: 0px 10px 18px -7px rgba(0, 0, 0, 0.8);
+ 
+}
+
+
+.img_container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card img {
+  transition: 0.5s;
+  
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card_espace{
+  padding-left:  10%; 
+  padding-right:  10%;
+  
+}
+#h2_card{
+  font-size: 2em;
+  color: var(--color6);
+  color: black;
+  margin-top: 2vh;
+  margin-bottom:5vh ; 
+  text-decoration: underline var(--color2);
+ margin-left: 10%;
+
+}
+.svg_quoi{
+  margin-top:2%;
+margin-left: 15%;
+  height: 5vh;
+  width: 5vh;
+
+}
+.actualites{
+  color:var(--color5);
+  margin-left: 19%;
+  height: 5vh;
+  width: 5vh;
+  
+}.img_card{  margin: 7% 0;
+  object-fit: cover;
+  object-position: 100% 80%; /* pour x et y */
+  width: 100%;
+  height: 50vh;
+  
+}
+
+}
+
+/**************** FOOTER responsive ***********************/
+
+@media screen and (max-width:1400px){
+
+
+footer{
+  height: auto;
+  background: var(--color6);
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  position: relative;
+}
+
+footer > div:nth-child(1){
+  height: 38vh;
+ 
+}
+
+.logo_footer img{
+  width: 30vh;
+  object-fit: cover;
+  padding-bottom: 10%;
+  vertical-align: top;
+}
+
+.logo_footer a{
+  padding-bottom: 20px;
+}
+
+.legal a{
+  margin-top: 5%;
+}
+
+#infos{
+  width: 60%;
+  flex-direction: wrap;
+  align-items: center;
+  display: flex;
+  border-left: 1px solid var(--color2);
+  justify-content: space-around;
+  font-size: 1em;
+}
+
+
+.contact h4 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+#contacts {
+  flex-direction: row;
+  font-size: 1em;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+svg:not(footer svg){
+  height: 15px;
+  width: 15px;
+  color: black;
+}
+
+footer a{
+  height: 15px;
+  color: var(--color8);
+  text-decoration: none;
+}
+
+footer a:hover{
+  color:var(--color5);
+}
+
+#contact_bordeaux,
+#contact_libourne{
+  width: 39%;
+
+}
+
+#contacts h4{
+  padding-bottom: 0;
+}
+
+#contacts > div:nth-child(1){
+  padding-top: 15%;
+}
+.texte_adresse{
+  font-size: 1em;
+}
+.texte_tel{
+  font-size: 1em;
+}
+#icons_social{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 48%;
+  padding-top: 15%;
+}
+
+.icons_social a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  background: var(--color7);
+}
+
+#icons_social svg{
+  height: 2.5vh;
+}
+
+}
+@media screen and (max-width:1000px){
+
+  footer{
+    height: auto;
+    background: var(--color6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: relative;
+    flex-direction: column;
+  }
+  
+  footer > div:nth-child(1){
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .logo_footer img{
+   align-items: center;
+    width: 40vh;
+    object-fit: cover;
+    vertical-align:bottom;
+  }
+  
+  .logo_footer a{
+    padding-bottom: 0;
+  
+  }
+  
+  .legal a{
+    margin-top: 5%;
+  }
+  
+  #infos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-left: none;
+  }
+  
+  .contact{
+    text-align: center;
+    height: 20%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .contact{
+    font-size: 0.4em;
+  } 
+  .contact h4{
+    font-size: 1.1rem;
+   
+  }
+  .texte_adresse{
+    font-size: 1.7em;
+  }
+  .texte_tel{
+    font-size: 2em;
+  }
+  
+  svg:not(footer svg){
+    height: 15px;
+    width: 15px;
+    color: black;
+  }
+  
+  footer a{
+    height: 15px;
+    color: var(--color8);
+    text-decoration: none;
+  }
+  
+  footer a:hover{
+    color: var(--water-blue);
+  }
+  
+  #contact_bordeaux,
+  #contact_libourne{
+    width: 29%;
+  }
+  
+  #contacts h4{
+   margin-bottom: 0%;
+    font-size: 2em;
+  }
+  #contacts h4 p{
+     font-size: 1em;
+   }
+  #icons_social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 48%;
+    padding-top: 15%;
+  }
+  
+  .icons_social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    background: var(--color7);
+  }
+  
+  #icons_social svg{
+    height: 2.5vh;
+  }
+}
+#scroll-up {
+
+  position: absolute;
+
+  right: 8%;
+
+  top: -40px;
+
+  width: 80px;
+
+  height: 80px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+
+#scroll-up a {
+
+  width: 100%;
+
+  height: 100%;
+
+  /* font-size: 2.6rem; */
+
+  border-radius: 50%;
+
+  background: var(--color7);
+
+  /* transform: rotate(-90deg); */
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+
+#scroll-up svg {
+
+  width: 45px;
+
+}
+
+
+
+#scroll-up a:hover {
+
+  color: var(--color6);
+
+  background: var(--color5);
+
+  border: 3px solid var(--color6);
+
+}
+
+

@@ -1,0 +1,1107 @@
+/************ VARIABLE COULEURS ************/
+:root {
+  --color1: #bc93d5;
+  --color2: #54ccc5;
+  --color3: #f8c06f;
+  --color4: #9ed351;
+  --color5: #009aa3;
+  --color6: #004f73;
+  --color7: #6f6f6e;
+  --color8: #f5f5f5;
+  --color9: #d6d5d5;
+}
+
+/*************** FONT *******************/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* @font-face {
+  font-family: "Montserrat_bold";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat_reg";
+  src: url(../fonts/Montserrat-Regular.ttf);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: relative;
+  background: url("../img/annie-spratt-hCb3lIB8L8E-unsplash.jpg") center/cover;
+}
+
+/****************** NAVBAR ****************/
+
+/* .navBar {
+  position: absolute;
+  transform: translateY(86px);
+  background-color: white;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  height: 15vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.4fr 0.6fr 2fr;
+  grid-template-areas:
+    " logo logo   galerie galerie galerie galerie galerie galerie  galerie liBlog liContact liCampus "
+    "logo logo    liDesign liDev  liDev liChef liChef liGraph liGraph liBlog liContact  liCampus";
+}
+
+.galerie {
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: galerie;
+  padding-top: 20px;
+  font-weight: 39px;
+  font-size: 1.8em;
+}
+
+.logo_nav {
+  width: 70%;
+  background: url("../img/logo.png") center/cover;
+  grid-area: logo;
+}
+
+.liDesign {
+  margin-left: 10%;
+  grid-area: liDesign;
+  text-align: center;
+}
+
+.liDev {
+  grid-area: liDev;
+  text-align: center;
+  margin-left: 20%;
+}
+
+.liChef {
+  margin-right: 20%;
+  grid-area: liChef;
+  text-align: center;
+}
+
+.liGraph {
+  grid-area: liGraph;
+  text-align: center;
+  margin-right: 20%;
+}
+
+.liBlog {
+  margin-left: 20%;
+  grid-area: liBlog;
+  padding-top: 100%;
+}
+
+.liContact {
+  margin-left: 50%;
+  grid-area: liContact;
+  padding-top: 70%;
+}
+
+.liCampus {
+  grid-area: liCampus;
+  margin-top: 21%;
+  margin-left: 20%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1em;
+  color: var(--color7);
+  font-weight: bolder;
+} */
+
+.navBar {
+  position: absolute;
+  transform: translateY(86px);
+  background-color: white;
+  width: 100%;
+  min-height: 150px;
+  height: 20vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    " logo logo   galerie galerie galerie galerie galerie galerie  galerie liBlog liContact liCampus "
+    "logo logo    liDesign liDesign  liDev liChef liChef liGraph liGraph liBlog liContact  liCampus";
+}
+
+.galerie {
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: galerie;
+  padding-top: 20px;
+  font-weight: 39px;
+  font-size: 1.8em;
+}
+
+#lien_galerie {
+  text-decoration: none;
+  font-size: 1em;
+  color: var(--color6);
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.logo_nav {
+  grid-area: logo;
+  width: 100%;
+  margin: auto 0 auto 10%;
+}
+
+.liDesign {
+  margin-left: 50%;
+  grid-area: liDesign;
+  text-align: center;
+}
+
+.liDev {
+  margin-left: 45%;
+  grid-area: liDev;
+  text-align: center;
+}
+
+.liChef {
+  margin-left: 27%;
+  grid-area: liChef;
+  text-align: center;
+}
+
+.liGraph {
+  margin-left: 10%;
+  grid-area: liGraph;
+  text-align: center;
+}
+.liBlog {
+  margin-left: 20%;
+  grid-area: liBlog;
+  padding-top: 20%;
+}
+.liContact {
+  grid-area: liContact;
+  padding-top: 20%;
+}
+
+.liCampus {
+  grid-area: liCampus;
+  padding-top: 20%;
+  margin-right: 30%;
+}
+
+#lien_nav {
+  text-decoration: none;
+  font-size: 1em;
+  color: var(--color7);
+  font-weight: bolder;
+}
+
+/************* SUITE HEADER  **************/
+
+#title_galery {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgba(46, 72, 82, 0.46) 0%,
+    rgba(46, 72, 82, 0.72) 100%
+  );
+}
+
+h1 {
+  transform: translateY(50vh);
+  font-family: "Montserrat", sans-serif;
+  font-size: 4vw;
+  color: #f1f1f1;
+}
+
+/***************** MAIN *****************/
+
+#portfolio-site {
+  margin: 90px 0;
+}
+
+#portfolio-site div {
+  padding: 0 13.75%;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: var(--color6);
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  color: var(--color6);
+}
+
+#box-img-project {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#portfolio-site img {
+  margin: 70px 0;
+  object-fit: cover;
+  object-position: 100% 80%; /* pour x et y */
+  width: 100%;
+  height: 40vw;
+}
+
+#choice-project {
+  margin: 6vw 0;
+  height: 40vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+#choice-project a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color7);
+  height: 100%;
+  width: 100%;
+}
+
+#choice-project #preview-project:hover #box-img-project {
+  background: var(--color1);
+}
+
+#choice-project #preview-project:hover img {
+  opacity: 0.4;
+}
+
+#choice-project #next-project:hover #box-img-project {
+  background: var(--color4);
+}
+
+#choice-project #next-project:hover img {
+  opacity: 0.4;
+}
+
+.box-choice {
+  width: 20%;
+}
+
+.box-choice img {
+  object-fit: cover;
+  width: 100%;
+  height: 18vw;
+}
+
+.box-choice div {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.box-choice svg {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+#preview-project svg {
+  left: 0;
+}
+
+#next-project svg {
+  right: 0;
+}
+
+#next-project img {
+  object-position: 100% 0;
+}
+
+/*************** FOOTER *****************/
+/* footer {
+  height: auto;
+  min-height: 170px;
+  background: var(--color6);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: white;
+  padding: 60px 20px;
+  position: relative;
+}
+
+footer > div:nth-child(1) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 200px;
+  object-fit: cover;
+  padding-bottom: 10px;
+}
+
+.logo a {
+  padding-bottom: 20px;
+}
+
+.legal a {
+  color: white;
+}
+
+#infos {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-left: 1px solid var(--color5);
+  font-size: 0.8rem;
+}
+
+.contact {
+  max-height: 152px;
+  min-width: 186px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact h4 {
+  font-size: 1.1rem;
+  padding-bottom: 20px;
+}
+
+#contacts > div:nth-child(1) {
+  padding-bottom: 66px;
+}
+
+svg:not(footer svg) {
+  height: 15px;
+  width: 15px;
+  color: black;
+}
+
+footer a {
+  height: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color5);
+}
+
+#contact_bordeaux,
+#contact_libourne {
+  width: 29%;
+}
+
+#contacts h4 {
+  padding-bottom: 0;
+}
+
+**********  ICON SOCIAL *************
+
+#icons_social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.icons_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.icons_social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icons_social svg {
+  height: 15px;
+}
+ */
+
+footer {
+  height: auto;
+  background: var(--color6);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: white;
+  padding: 60px 20px;
+  position: relative;
+}
+
+footer > div:nth-child(1) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_footer img {
+  width: 200px;
+  object-fit: cover;
+  padding-bottom: 10px;
+}
+
+.logo_footer a {
+  padding-bottom: 20px;
+}
+
+.legal a {
+  margin-top: 5%;
+}
+
+#infos {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-left: 1px solid var(--color2);
+}
+
+.contact {
+  max-height: 152px;
+  min-width: 186px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact h4 {
+  font-size: 1.1rem;
+  padding-bottom: 20px;
+}
+
+#contacts > div:nth-child(1) {
+  padding-bottom: 66px;
+}
+
+svg:not(footer svg) {
+  height: 15px;
+  width: 15px;
+  color: black;
+}
+
+footer a {
+  height: 15px;
+  color: var(--color8);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--water-blue);
+}
+
+#contact_bordeaux,
+#contact_libourne {
+  width: 29%;
+}
+
+#contacts h4 {
+  padding-bottom: 0;
+}
+.texte_adresse,
+.texte_tel {
+  font-size: 2.5em;
+}
+/**********  ICON SOCIAL *************/
+
+#icons_social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.icons_social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: var(--color7);
+}
+
+#icons_social svg {
+  height: 15px;
+}
+
+/**************** FOOTER ***********************/
+footer {
+  height: auto;
+  background: var(--color6);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: white;
+  padding: 60px 20px;
+  position: relative;
+  flex-direction: row;
+}
+
+footer > div:nth-child(1) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_footer img {
+  width: 200px;
+  object-fit: cover;
+  padding-bottom: 10px;
+}
+
+.logo_footer a {
+  padding-bottom: 20px;
+}
+
+.legal a {
+  margin-top: 5%;
+}
+
+#infos {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-left: none;
+}
+
+.contact {
+  text-align: center;
+  height: 20%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact {
+  font-size: 0.4em;
+}
+
+.contact h4 {
+  font-size: 1.1rem;
+}
+
+svg:not(footer svg) {
+  height: 15px;
+  width: 15px;
+  color: black;
+}
+
+footer a {
+  height: 15px;
+  color: var(--color8);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--water-blue);
+}
+
+#contacts h4 {
+  padding-bottom: 0;
+}
+
+/*************** SCROLL-UP *********************/
+
+#scroll-up {
+  position: absolute;
+  right: 8%;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scroll-up a {
+  width: 100%;
+  height: 100%;
+  /* font-size: 2.6rem; */
+  border-radius: 50%;
+  background: var(--color7);
+  /* transform: rotate(-90deg); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scroll-up svg {
+  width: 45px;
+}
+
+#scroll-up a:hover {
+  color: var(--color6);
+  background: var(--color5);
+  border: 3px solid var(--color6);
+}
+
+/****************** @MEDIA ******************/
+
+@media screen and (max-width: 1400px) {
+  footer {
+    height: auto;
+    background: var(--color6);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    position: relative;
+  }
+
+  footer > div:nth-child(1) {
+    height: 38vh;
+  }
+
+  .logo_footer img {
+    width: 30vh;
+    object-fit: cover;
+    padding-bottom: 10%;
+    vertical-align: top;
+  }
+
+  .logo_footer a {
+    padding-bottom: 20px;
+  }
+
+  .legal a {
+    margin-top: 5%;
+  }
+
+  #infos {
+    width: 60%;
+    flex-direction: wrap;
+    align-items: center;
+    display: flex;
+    border-left: 1px solid var(--color2);
+    justify-content: space-around;
+    font-size: 1em;
+  }
+
+  .contact h4 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+
+  #contacts {
+    flex-direction: row;
+    font-size: 1em;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  svg:not(footer svg) {
+    height: 15px;
+    width: 15px;
+    color: black;
+  }
+
+  footer a {
+    height: 15px;
+    color: var(--color8);
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: var(--color5);
+  }
+
+  #contact_bordeaux,
+  #contact_libourne {
+    width: 39%;
+  }
+
+  #contacts h4 {
+    padding-bottom: 0;
+  }
+
+  #contacts > div:nth-child(1) {
+    padding-top: 15%;
+  }
+
+  #icons_social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 48%;
+    padding-top: 15%;
+  }
+
+  .icons_social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    background: var(--color7);
+  }
+
+  #icons_social svg {
+    height: 2.5vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    height: auto;
+    background: var(--color6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: relative;
+    flex-direction: column;
+    padding: 15%;
+  }
+
+  footer > div:nth-child(1) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .logo_footer img {
+    align-items: center;
+    width: 40vh;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
+
+  .logo_footer a {
+    padding-bottom: 0;
+  }
+
+  .legal a {
+    margin-top: 5%;
+  }
+
+  #infos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-left: none;
+  }
+
+  .contact {
+    text-align: center;
+    height: 20%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contact {
+    font-size: 0.4em;
+  }
+
+  .contact h4 {
+    font-size: 1.1rem;
+  }
+  .texte_adresse {
+    font-size: 1.7em;
+  }
+  .texte_tel {
+    font-size: 2em;
+  }
+
+  svg:not(footer svg) {
+    height: 15px;
+    width: 15px;
+    color: black;
+  }
+
+  footer a {
+    height: 15px;
+    color: var(--color8);
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: var(--water-blue);
+  }
+
+  #contact_bordeaux,
+  #contact_libourne {
+    width: 29%;
+  }
+
+  #contacts h4 {
+    margin-bottom: 0%;
+    font-size: 2em;
+  }
+  #contacts h4 p {
+    font-size: 1em;
+  }
+  #icons_social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 48%;
+    padding-top: 15%;
+  }
+
+  .icons_social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    background: var(--color7);
+  }
+
+  #icons_social svg {
+    height: 2.5vh;
+  }
+}
+
+/* @media screen and (max-width: 575px) {
+  .container1 {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "quatre"
+      "designPict"
+      "designText"
+      "devPict"
+      "devText"
+      "chefPict "
+      "chefText"
+      "graphPict"
+      "graphText "
+      "manque";
+  }
+  .bg1 {
+    display: none;
+  }
+  .navBar {
+    gap: 3%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.7fr 0.7fr 0.7fr;
+    grid-template-areas: " logo  galerie  liBlog liContact liCampus ";
+  }
+
+  .logo_nav {
+    margin-right: 10%;
+    grid-area: logo;
+    height: 11vh;
+    width: 13vh;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .designPict,
+  .devPict,
+  .chefPict,
+  .graphPict {
+    max-width: 375px;
+  }
+  .lien_pict_design,
+  .lien_pict_dev,
+  .lien_chef_pict,
+  .lien_graph_pict {
+    max-width: 375px;
+  }
+
+  #lien_nav {
+    margin: 0;
+    padding: 0;
+  }
+  .quatre {
+    margin-left: 0;
+    padding: 0;
+    max-width: 375px;
+  }
+
+  .graphText,
+  .designText,
+  .chefText,
+  .devText {
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
+  .rose,
+  .turquoise,
+  .jaune,
+  .vert {
+    max-width: 375px;
+  }
+  p {
+    max-width: 375px;
+  }
+  .manque {
+    padding: 0;
+  }
+
+  footer {
+    padding: 0;
+  }
+  .svg_manque {
+    margin: 0;
+  }
+  #contact_bordeaux,
+  #contact_libourne {
+    min-width: 69%;
+  }
+}
+ */
+@media screen and (max-width: 576px) {
+  header {
+    height: 33vh;
+  }
+
+  .navBar {
+    height: 5vh;
+    min-height: unset;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: " logo logo galerie galerie galerie galerie galerie liBlog liContact liCampus liCampus liCampus " "logo logo galerie galerie galerie galerie galerie liBlog liContact liCampus liCampus liCampus";
+    transform: translateY(20px);
+  }
+
+  .logo_nav {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .navBar img {
+    height: 80%;
+  }
+
+  .galerie {
+    padding-top: 7%;
+    font-size: 0.5rem;
+    align-items: center;
+  }
+
+  .liDesign,
+  .liDev,
+  .liChef,
+  .liGraph {
+    display: none;
+  }
+
+  .liBlog,
+  .liContact,
+  .liCampus {
+    margin: 0 12%;
+  }
+
+  .liCampus {
+    padding-top: 14.5%;
+  }
+
+  #lien_nav {
+    font-size: 0.5rem;
+  }
+
+  #title_galery {
+    height: 33vh;
+  }
+
+  h1 {
+    height: min-content;
+    transform: translateY(16vh);
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #portfolio-site {
+    margin: 90px 12%;
+  }
+
+  #portfolio-site div {
+    padding: 0;
+  }
+
+  #portfolio-site img {
+    margin: 40px 0 20px 0;
+  }
+
+  #portfolio-site div:nth-child(1) p {
+    display: none;
+  }
+
+  h3 {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  #mini-story p {
+    font-size: 15px;
+  }
+
+  #choice-project {
+    height: auto;
+    padding: 10% 0 10% 0;
+    flex-direction: column;
+  }
+
+  .box-choice {
+    width: 80%;
+    margin: 10% 0;
+  }
+
+  .box-choice img {
+    height: 65vw;
+  }
+
+  footer {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
